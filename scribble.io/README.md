@@ -1,4 +1,5 @@
 # 🧮  AI Calculator
+![Screenshot 2024-10-23 185308](https://github.com/user-attachments/assets/29c4ede8-3eec-41b7-87d5-62922e8f7ee2)
 
 ## 📝 Overview
 The  AI Calculator is an innovative project that utilizes OpenCV and Google’s Gemini AI to solve mathematical problems of any complexity. The user can draw the math problem on the screen, and the AI model will interpret the visual input to provide a detailed solution.
