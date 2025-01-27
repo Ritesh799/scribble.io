@@ -7,9 +7,18 @@ import google.generativeai as genai
 from PIL import Image
 # import base64
 from io import BytesIO
+from dotenv import load_dotenv
+import os
+# Load environment variables from .env file
+load_dotenv()
 
-# Initialize gemini with the API key
-genai.configure(api_key="AIzaSyCMvzAcOLQv9bVgrE6ap-pvVLhHv9XQDoI")
+# Get the API key from environment variables
+api_key = os.getenv("GEMINI_API_KEY")
+
+# Configure the Generative AI API
+genai.configure(api_key=api_key)
+
+# Initialize the Generative Model
 model = genai.GenerativeModel('gemini-1.5-flash')
 # Initialize the hand detector without the static_mode argument
 detector = HandDetector(maxHands=1, detectionCon=0.75, minTrackCon=0.75)
